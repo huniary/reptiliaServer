@@ -1,0 +1,33 @@
+{
+  "name": "sparrow_server",
+  "version": "1.0.0",
+  "description": "server of sparrow project.",
+  "main": "index.js",
+  "author": "huny",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "koa-send": "^5.0.1",
+    "koa-static": "^5.0.0",
+    "mongoose": "^6.3.3",
+    "mongoose-sequence": "^5.3.1",
+    "path": "^0.12.7",
+    "sanitize-html": "^2.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon --watch src/ src/index.js --ignore client"
+  }
+}
